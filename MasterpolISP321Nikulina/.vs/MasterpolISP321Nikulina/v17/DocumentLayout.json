@@ -1,0 +1,135 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\niva2\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\MasterPol\\MasterpolISP321Nikulina\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{CAC784BF-01F2-44BF-B7DB-C045A075E4C4}|MasterpolISP321Nikulina\\MasterpolISP321Nikulina.csproj|c:\\users\\niva2\\onedrive\\\u0440\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\masterpol\\masterpolisp321nikulina\\masterpolisp321nikulina\\pages\\loginpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CAC784BF-01F2-44BF-B7DB-C045A075E4C4}|MasterpolISP321Nikulina\\MasterpolISP321Nikulina.csproj|solutionrelative:masterpolisp321nikulina\\pages\\loginpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CAC784BF-01F2-44BF-B7DB-C045A075E4C4}|MasterpolISP321Nikulina\\MasterpolISP321Nikulina.csproj|c:\\users\\niva2\\onedrive\\\u0440\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\masterpol\\masterpolisp321nikulina\\masterpolisp321nikulina\\pages\\loginpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{CAC784BF-01F2-44BF-B7DB-C045A075E4C4}|MasterpolISP321Nikulina\\MasterpolISP321Nikulina.csproj|solutionrelative:masterpolisp321nikulina\\pages\\loginpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CAC784BF-01F2-44BF-B7DB-C045A075E4C4}|MasterpolISP321Nikulina\\MasterpolISP321Nikulina.csproj|c:\\users\\niva2\\onedrive\\\u0440\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\masterpol\\masterpolisp321nikulina\\masterpolisp321nikulina\\pages\\capchapage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{CAC784BF-01F2-44BF-B7DB-C045A075E4C4}|MasterpolISP321Nikulina\\MasterpolISP321Nikulina.csproj|solutionrelative:masterpolisp321nikulina\\pages\\capchapage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CAC784BF-01F2-44BF-B7DB-C045A075E4C4}|MasterpolISP321Nikulina\\MasterpolISP321Nikulina.csproj|c:\\users\\niva2\\onedrive\\\u0440\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\masterpol\\masterpolisp321nikulina\\masterpolisp321nikulina\\classes\\manager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CAC784BF-01F2-44BF-B7DB-C045A075E4C4}|MasterpolISP321Nikulina\\MasterpolISP321Nikulina.csproj|solutionrelative:masterpolisp321nikulina\\classes\\manager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CAC784BF-01F2-44BF-B7DB-C045A075E4C4}|MasterpolISP321Nikulina\\MasterpolISP321Nikulina.csproj|c:\\users\\niva2\\onedrive\\\u0440\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\masterpol\\masterpolisp321nikulina\\masterpolisp321nikulina\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{CAC784BF-01F2-44BF-B7DB-C045A075E4C4}|MasterpolISP321Nikulina\\MasterpolISP321Nikulina.csproj|solutionrelative:masterpolisp321nikulina\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CAC784BF-01F2-44BF-B7DB-C045A075E4C4}|MasterpolISP321Nikulina\\MasterpolISP321Nikulina.csproj|c:\\users\\niva2\\onedrive\\\u0440\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\masterpol\\masterpolisp321nikulina\\masterpolisp321nikulina\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{CAC784BF-01F2-44BF-B7DB-C045A075E4C4}|MasterpolISP321Nikulina\\MasterpolISP321Nikulina.csproj|solutionrelative:masterpolisp321nikulina\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CAC784BF-01F2-44BF-B7DB-C045A075E4C4}|MasterpolISP321Nikulina\\MasterpolISP321Nikulina.csproj|c:\\users\\niva2\\onedrive\\\u0440\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\masterpol\\masterpolisp321nikulina\\masterpolisp321nikulina\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CAC784BF-01F2-44BF-B7DB-C045A075E4C4}|MasterpolISP321Nikulina\\MasterpolISP321Nikulina.csproj|solutionrelative:masterpolisp321nikulina\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "CapchaPage.xaml",
+              "DocumentMoniker": "C:\\Users\\niva2\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\MasterPol\\MasterpolISP321Nikulina\\MasterpolISP321Nikulina\\Pages\\CapchaPage.xaml",
+              "RelativeDocumentMoniker": "MasterpolISP321Nikulina\\Pages\\CapchaPage.xaml",
+              "ToolTip": "C:\\Users\\niva2\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\MasterPol\\MasterpolISP321Nikulina\\MasterpolISP321Nikulina\\Pages\\CapchaPage.xaml",
+              "RelativeToolTip": "MasterpolISP321Nikulina\\Pages\\CapchaPage.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-11-26T11:43:43.062Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Manager.cs",
+              "DocumentMoniker": "C:\\Users\\niva2\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\MasterPol\\MasterpolISP321Nikulina\\MasterpolISP321Nikulina\\Classes\\Manager.cs",
+              "RelativeDocumentMoniker": "MasterpolISP321Nikulina\\Classes\\Manager.cs",
+              "ToolTip": "C:\\Users\\niva2\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\MasterPol\\MasterpolISP321Nikulina\\MasterpolISP321Nikulina\\Classes\\Manager.cs",
+              "RelativeToolTip": "MasterpolISP321Nikulina\\Classes\\Manager.cs",
+              "ViewState": "AQIAAAQAAAAAAAAAAAAqwC0AAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-26T10:49:54.986Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "LoginPage.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\niva2\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\MasterPol\\MasterpolISP321Nikulina\\MasterpolISP321Nikulina\\Pages\\LoginPage.xaml.cs",
+              "RelativeDocumentMoniker": "MasterpolISP321Nikulina\\Pages\\LoginPage.xaml.cs",
+              "ToolTip": "C:\\Users\\niva2\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\MasterPol\\MasterpolISP321Nikulina\\MasterpolISP321Nikulina\\Pages\\LoginPage.xaml.cs",
+              "RelativeToolTip": "MasterpolISP321Nikulina\\Pages\\LoginPage.xaml.cs",
+              "ViewState": "AQIAAEQAAAAAAAAAAAAAAFgAAABTAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-26T10:48:10.851Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "LoginPage.xaml",
+              "DocumentMoniker": "C:\\Users\\niva2\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\MasterPol\\MasterpolISP321Nikulina\\MasterpolISP321Nikulina\\Pages\\LoginPage.xaml",
+              "RelativeDocumentMoniker": "MasterpolISP321Nikulina\\Pages\\LoginPage.xaml",
+              "ToolTip": "C:\\Users\\niva2\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\MasterPol\\MasterpolISP321Nikulina\\MasterpolISP321Nikulina\\Pages\\LoginPage.xaml",
+              "RelativeToolTip": "MasterpolISP321Nikulina\\Pages\\LoginPage.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-11-26T10:34:58.614Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "App.xaml",
+              "DocumentMoniker": "C:\\Users\\niva2\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\MasterPol\\MasterpolISP321Nikulina\\MasterpolISP321Nikulina\\App.xaml",
+              "RelativeDocumentMoniker": "MasterpolISP321Nikulina\\App.xaml",
+              "ToolTip": "C:\\Users\\niva2\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\MasterPol\\MasterpolISP321Nikulina\\MasterpolISP321Nikulina\\App.xaml",
+              "RelativeToolTip": "MasterpolISP321Nikulina\\App.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-11-26T10:36:14.981Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "MainWindow.xaml",
+              "DocumentMoniker": "C:\\Users\\niva2\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\MasterPol\\MasterpolISP321Nikulina\\MasterpolISP321Nikulina\\MainWindow.xaml",
+              "RelativeDocumentMoniker": "MasterpolISP321Nikulina\\MainWindow.xaml",
+              "ToolTip": "C:\\Users\\niva2\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\MasterPol\\MasterpolISP321Nikulina\\MasterpolISP321Nikulina\\MainWindow.xaml",
+              "RelativeToolTip": "MasterpolISP321Nikulina\\MainWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-11-26T10:01:52.592Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "MainWindow.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\niva2\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\MasterPol\\MasterpolISP321Nikulina\\MasterpolISP321Nikulina\\MainWindow.xaml.cs",
+              "RelativeDocumentMoniker": "MasterpolISP321Nikulina\\MainWindow.xaml.cs",
+              "ToolTip": "C:\\Users\\niva2\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\MasterPol\\MasterpolISP321Nikulina\\MasterpolISP321Nikulina\\MainWindow.xaml.cs",
+              "RelativeToolTip": "MasterpolISP321Nikulina\\MainWindow.xaml.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABcAAAAbAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-26T10:01:51.764Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
