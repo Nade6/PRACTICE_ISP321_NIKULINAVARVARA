@@ -1,0 +1,114 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="Хранилище Practice2024ModelContainer" CdmEntityContainer="Practice2024Entities">
+    <EntitySetMapping Name="BrokenPixels">
+      <EntityTypeMapping TypeName="Practice2024Model.BrokenPixels">
+        <MappingFragment StoreEntitySet="BrokenPixels">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="brokenPixels1" ColumnName="brokenPixels" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Efficiency">
+      <EntityTypeMapping TypeName="Practice2024Model.Efficiency">
+        <MappingFragment StoreEntitySet="Efficiency">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="efficiency1" ColumnName="efficiency" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Keyboards">
+      <EntityTypeMapping TypeName="Practice2024Model.Keyboards">
+        <MappingFragment StoreEntitySet="Keyboards">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="keyboardName" ColumnName="keyboardName" />
+          <ScalarProperty Name="typeKeyboard" ColumnName="typeKeyboard" />
+          <ScalarProperty Name="interfaceConnection" ColumnName="interfaceConnection" />
+          <ScalarProperty Name="wireless" ColumnName="wireless" />
+          <ScalarProperty Name="idEffinciency" ColumnName="idEffinciency" />
+          <ScalarProperty Name="idQuantityKeyboard" ColumnName="idQuantityKeyboard" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Manufacturers">
+      <EntityTypeMapping TypeName="Practice2024Model.Manufacturers">
+        <MappingFragment StoreEntitySet="Manufacturers">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="manufacturer" ColumnName="manufacturer" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Monitors">
+      <EntityTypeMapping TypeName="Practice2024Model.Monitors">
+        <MappingFragment StoreEntitySet="Monitors">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="idmanufacturer" ColumnName="idmanufacturer" />
+          <ScalarProperty Name="idQuantityMonitors" ColumnName="idQuantityMonitors" />
+          <ScalarProperty Name="nameModel" ColumnName="nameModel" />
+          <ScalarProperty Name="screenResolution" ColumnName="screenResolution" />
+          <ScalarProperty Name="gercovka" ColumnName="gercovka" />
+          <ScalarProperty Name="idTypeMatricy" ColumnName="idTypeMatricy" />
+          <ScalarProperty Name="idBrokenPixels" ColumnName="idBrokenPixels" />
+          <ScalarProperty Name="commentForBrokenPixels" ColumnName="commentForBrokenPixels" />
+          <ScalarProperty Name="idEfficiency" ColumnName="idEfficiency" />
+          <ScalarProperty Name="idStatusSelling" ColumnName="idStatusSelling" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Pks">
+      <EntityTypeMapping TypeName="Practice2024Model.Pks">
+        <MappingFragment StoreEntitySet="Pks">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="processor" ColumnName="processor" />
+          <ScalarProperty Name="motherboard" ColumnName="motherboard" />
+          <ScalarProperty Name="RAMmemory" ColumnName="RAMmemory" />
+          <ScalarProperty Name="kuller" ColumnName="kuller" />
+          <ScalarProperty Name="hardDrive" ColumnName="hardDrive" />
+          <ScalarProperty Name="energyBlock" ColumnName="energyBlock" />
+          <ScalarProperty Name="videoCard" ColumnName="videoCard" />
+          <ScalarProperty Name="fan" ColumnName="fan" />
+          <ScalarProperty Name="idEfficiency" ColumnName="idEfficiency" />
+          <ScalarProperty Name="other" ColumnName="other" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="StatusSelling">
+      <EntityTypeMapping TypeName="Practice2024Model.StatusSelling">
+        <MappingFragment StoreEntitySet="StatusSelling">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="statusSelling1" ColumnName="statusSelling" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="sysdiagrams">
+      <EntityTypeMapping TypeName="Practice2024Model.sysdiagrams">
+        <MappingFragment StoreEntitySet="sysdiagrams">
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="principal_id" ColumnName="principal_id" />
+          <ScalarProperty Name="diagram_id" ColumnName="diagram_id" />
+          <ScalarProperty Name="version" ColumnName="version" />
+          <ScalarProperty Name="definition" ColumnName="definition" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TypeMatricy">
+      <EntityTypeMapping TypeName="Practice2024Model.TypeMatricy">
+        <MappingFragment StoreEntitySet="TypeMatricy">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="typeMatricy1" ColumnName="typeMatricy" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Users">
+      <EntityTypeMapping TypeName="Practice2024Model.Users">
+        <MappingFragment StoreEntitySet="Users">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="fname" ColumnName="fname" />
+          <ScalarProperty Name="login" ColumnName="login" />
+          <ScalarProperty Name="password" ColumnName="password" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

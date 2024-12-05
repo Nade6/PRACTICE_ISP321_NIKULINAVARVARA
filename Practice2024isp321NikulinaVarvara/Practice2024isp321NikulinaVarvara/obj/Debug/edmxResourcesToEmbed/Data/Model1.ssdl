@@ -1,0 +1,226 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="Хранилище Practice2024Model" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="BrokenPixels">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" Nullable="false" />
+    <Property Name="brokenPixels" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="Efficiency">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" Nullable="false" />
+    <Property Name="efficiency" Type="nvarchar" MaxLength="50" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Keyboards">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" Nullable="false" />
+    <Property Name="keyboardName" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="typeKeyboard" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="interfaceConnection" Type="nvarchar" MaxLength="50" />
+    <Property Name="wireless" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="idEffinciency" Type="int" Nullable="false" />
+    <Property Name="idQuantityKeyboard" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Manufacturers">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" Nullable="false" />
+    <Property Name="manufacturer" Type="nvarchar" MaxLength="50" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Monitors">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" Nullable="false" />
+    <Property Name="idmanufacturer" Type="int" Nullable="false" />
+    <Property Name="idQuantityMonitors" Type="int" Nullable="false" />
+    <Property Name="nameModel" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="screenResolution" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="gercovka" Type="nvarchar" MaxLength="100" Nullable="false" />
+    <Property Name="idTypeMatricy" Type="int" />
+    <Property Name="idBrokenPixels" Type="int" />
+    <Property Name="commentForBrokenPixels" Type="nvarchar" MaxLength="200" />
+    <Property Name="idEfficiency" Type="int" Nullable="false" />
+    <Property Name="idStatusSelling" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Pks">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="nchar" MaxLength="10" Nullable="false" />
+    <Property Name="processor" Type="nvarchar" MaxLength="50" />
+    <Property Name="motherboard" Type="nvarchar" MaxLength="100" Nullable="false" />
+    <Property Name="RAMmemory" Type="nvarchar" MaxLength="50" />
+    <Property Name="kuller" Type="nvarchar" MaxLength="50" />
+    <Property Name="hardDrive" Type="nvarchar" MaxLength="50" />
+    <Property Name="energyBlock" Type="nvarchar" MaxLength="100" />
+    <Property Name="videoCard" Type="nvarchar" MaxLength="50" />
+    <Property Name="fan" Type="nvarchar" MaxLength="50" />
+    <Property Name="idEfficiency" Type="int" Nullable="false" />
+    <Property Name="other" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="StatusSelling">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" Nullable="false" />
+    <Property Name="statusSelling" Type="nvarchar" MaxLength="60" Nullable="false" />
+  </EntityType>
+  <EntityType Name="sysdiagrams">
+    <Key>
+      <PropertyRef Name="diagram_id" />
+    </Key>
+    <Property Name="name" Type="nvarchar" MaxLength="128" Nullable="false" />
+    <Property Name="principal_id" Type="int" Nullable="false" />
+    <Property Name="diagram_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="version" Type="int" />
+    <Property Name="definition" Type="varbinary(max)" />
+  </EntityType>
+  <EntityType Name="TypeMatricy">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" Nullable="false" />
+    <Property Name="typeMatricy" Type="nvarchar" MaxLength="50" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Users">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" Nullable="false" />
+    <Property Name="name" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="fname" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="login" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="password" Type="nvarchar" MaxLength="50" Nullable="false" />
+  </EntityType>
+  <Association Name="FK_Keyboards_Efficiency">
+    <End Role="Efficiency" Type="Self.Efficiency" Multiplicity="1" />
+    <End Role="Keyboards" Type="Self.Keyboards" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Efficiency">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="Keyboards">
+        <PropertyRef Name="idEffinciency" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Monitors_BrokenPixels">
+    <End Role="BrokenPixels" Type="Self.BrokenPixels" Multiplicity="0..1" />
+    <End Role="Monitors" Type="Self.Monitors" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="BrokenPixels">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="Monitors">
+        <PropertyRef Name="idBrokenPixels" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Monitors_Efficiency">
+    <End Role="Efficiency" Type="Self.Efficiency" Multiplicity="1" />
+    <End Role="Monitors" Type="Self.Monitors" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Efficiency">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="Monitors">
+        <PropertyRef Name="idEfficiency" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Monitors_Manufacturers">
+    <End Role="Manufacturers" Type="Self.Manufacturers" Multiplicity="1" />
+    <End Role="Monitors" Type="Self.Monitors" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Manufacturers">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="Monitors">
+        <PropertyRef Name="idmanufacturer" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Monitors_StatusSelling">
+    <End Role="StatusSelling" Type="Self.StatusSelling" Multiplicity="1" />
+    <End Role="Monitors" Type="Self.Monitors" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="StatusSelling">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="Monitors">
+        <PropertyRef Name="idStatusSelling" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Monitors_TypeMatricy">
+    <End Role="TypeMatricy" Type="Self.TypeMatricy" Multiplicity="0..1" />
+    <End Role="Monitors" Type="Self.Monitors" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TypeMatricy">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="Monitors">
+        <PropertyRef Name="idTypeMatricy" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Pks_Efficiency">
+    <End Role="Efficiency" Type="Self.Efficiency" Multiplicity="1" />
+    <End Role="Pks" Type="Self.Pks" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Efficiency">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="Pks">
+        <PropertyRef Name="idEfficiency" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="Хранилище Practice2024ModelContainer">
+    <EntitySet Name="BrokenPixels" EntityType="Self.BrokenPixels" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Efficiency" EntityType="Self.Efficiency" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Keyboards" EntityType="Self.Keyboards" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Manufacturers" EntityType="Self.Manufacturers" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Monitors" EntityType="Self.Monitors" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Pks" EntityType="Self.Pks" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="StatusSelling" EntityType="Self.StatusSelling" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagrams" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TypeMatricy" EntityType="Self.TypeMatricy" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Users" EntityType="Self.Users" Schema="dbo" store:Type="Tables" />
+    <AssociationSet Name="FK_Keyboards_Efficiency" Association="Self.FK_Keyboards_Efficiency">
+      <End Role="Efficiency" EntitySet="Efficiency" />
+      <End Role="Keyboards" EntitySet="Keyboards" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Monitors_BrokenPixels" Association="Self.FK_Monitors_BrokenPixels">
+      <End Role="BrokenPixels" EntitySet="BrokenPixels" />
+      <End Role="Monitors" EntitySet="Monitors" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Monitors_Efficiency" Association="Self.FK_Monitors_Efficiency">
+      <End Role="Efficiency" EntitySet="Efficiency" />
+      <End Role="Monitors" EntitySet="Monitors" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Monitors_Manufacturers" Association="Self.FK_Monitors_Manufacturers">
+      <End Role="Manufacturers" EntitySet="Manufacturers" />
+      <End Role="Monitors" EntitySet="Monitors" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Monitors_StatusSelling" Association="Self.FK_Monitors_StatusSelling">
+      <End Role="StatusSelling" EntitySet="StatusSelling" />
+      <End Role="Monitors" EntitySet="Monitors" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Monitors_TypeMatricy" Association="Self.FK_Monitors_TypeMatricy">
+      <End Role="TypeMatricy" EntitySet="TypeMatricy" />
+      <End Role="Monitors" EntitySet="Monitors" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Pks_Efficiency" Association="Self.FK_Pks_Efficiency">
+      <End Role="Efficiency" EntitySet="Efficiency" />
+      <End Role="Pks" EntitySet="Pks" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

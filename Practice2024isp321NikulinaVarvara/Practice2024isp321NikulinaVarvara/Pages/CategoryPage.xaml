@@ -1,0 +1,22 @@
+﻿<Page x:Class="Practice2024isp321NikulinaVarvara.Pages.CategoryPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:Practice2024isp321NikulinaVarvara.Pages"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="CategoryPage">
+
+    <Grid>
+        <Button Content="Мониторы" Name="MonitorsButton" HorizontalAlignment="Center"
+                VerticalAlignment="Top" Width="200" Height="40" Margin="10,10,10,0" 
+                Click="MonitorsButton_Click"/>
+        <Button Content="Клавиатуры" Name="KeyboardsButton" HorizontalAlignment="Center" 
+                VerticalAlignment="Top" Width="200" Height="40" Margin="10,60,10,0" 
+                Click="KeyboardsButton_Click"/>
+        <Button Content="ПК" Name="PcsButton" HorizontalAlignment="Center" 
+                VerticalAlignment="Top" Width="200" Height="40" Margin="10,110,10,0" 
+                Click="PcsButton_Click"/>
+    </Grid>
+</Page>

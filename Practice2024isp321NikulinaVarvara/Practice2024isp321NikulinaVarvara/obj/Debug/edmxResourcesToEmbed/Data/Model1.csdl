@@ -1,0 +1,240 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="Practice2024Model" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="BrokenPixels">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" />
+    <Property Name="brokenPixels1" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="Monitors" Relationship="Self.FK_Monitors_BrokenPixels" FromRole="BrokenPixels" ToRole="Monitors" />
+  </EntityType>
+  <EntityType Name="Efficiency">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" />
+    <Property Name="efficiency1" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <NavigationProperty Name="Keyboards" Relationship="Self.FK_Keyboards_Efficiency" FromRole="Efficiency" ToRole="Keyboards" />
+    <NavigationProperty Name="Monitors" Relationship="Self.FK_Monitors_Efficiency" FromRole="Efficiency" ToRole="Monitors" />
+    <NavigationProperty Name="Pks" Relationship="Self.FK_Pks_Efficiency" FromRole="Efficiency" ToRole="Pks" />
+  </EntityType>
+  <EntityType Name="Keyboards">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" />
+    <Property Name="keyboardName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="typeKeyboard" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="interfaceConnection" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="wireless" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="idEffinciency" Type="Int32" Nullable="false" />
+    <Property Name="idQuantityKeyboard" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="Efficiency" Relationship="Self.FK_Keyboards_Efficiency" FromRole="Keyboards" ToRole="Efficiency" />
+  </EntityType>
+  <EntityType Name="Manufacturers">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" />
+    <Property Name="manufacturer" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <NavigationProperty Name="Monitors" Relationship="Self.FK_Monitors_Manufacturers" FromRole="Manufacturers" ToRole="Monitors" />
+  </EntityType>
+  <EntityType Name="Monitors">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" />
+    <Property Name="idmanufacturer" Type="Int32" Nullable="false" />
+    <Property Name="idQuantityMonitors" Type="Int32" Nullable="false" />
+    <Property Name="nameModel" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="screenResolution" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="gercovka" Type="String" MaxLength="100" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="idTypeMatricy" Type="Int32" />
+    <Property Name="idBrokenPixels" Type="Int32" />
+    <Property Name="commentForBrokenPixels" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Name="idEfficiency" Type="Int32" Nullable="false" />
+    <Property Name="idStatusSelling" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="BrokenPixels" Relationship="Self.FK_Monitors_BrokenPixels" FromRole="Monitors" ToRole="BrokenPixels" />
+    <NavigationProperty Name="Efficiency" Relationship="Self.FK_Monitors_Efficiency" FromRole="Monitors" ToRole="Efficiency" />
+    <NavigationProperty Name="Manufacturers" Relationship="Self.FK_Monitors_Manufacturers" FromRole="Monitors" ToRole="Manufacturers" />
+    <NavigationProperty Name="StatusSelling" Relationship="Self.FK_Monitors_StatusSelling" FromRole="Monitors" ToRole="StatusSelling" />
+    <NavigationProperty Name="TypeMatricy" Relationship="Self.FK_Monitors_TypeMatricy" FromRole="Monitors" ToRole="TypeMatricy" />
+  </EntityType>
+  <EntityType Name="Pks">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="String" MaxLength="10" FixedLength="true" Unicode="true" Nullable="false" />
+    <Property Name="processor" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="motherboard" Type="String" MaxLength="100" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="RAMmemory" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="kuller" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="hardDrive" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="energyBlock" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="videoCard" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="fan" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="idEfficiency" Type="Int32" Nullable="false" />
+    <Property Name="other" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="Efficiency" Relationship="Self.FK_Pks_Efficiency" FromRole="Pks" ToRole="Efficiency" />
+  </EntityType>
+  <EntityType Name="StatusSelling">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" />
+    <Property Name="statusSelling1" Type="String" MaxLength="60" FixedLength="false" Unicode="true" Nullable="false" />
+    <NavigationProperty Name="Monitors" Relationship="Self.FK_Monitors_StatusSelling" FromRole="StatusSelling" ToRole="Monitors" />
+  </EntityType>
+  <EntityType Name="sysdiagrams">
+    <Key>
+      <PropertyRef Name="diagram_id" />
+    </Key>
+    <Property Name="name" Type="String" MaxLength="128" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="principal_id" Type="Int32" Nullable="false" />
+    <Property Name="diagram_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="version" Type="Int32" />
+    <Property Name="definition" Type="Binary" MaxLength="Max" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="TypeMatricy">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" />
+    <Property Name="typeMatricy1" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <NavigationProperty Name="Monitors" Relationship="Self.FK_Monitors_TypeMatricy" FromRole="TypeMatricy" ToRole="Monitors" />
+  </EntityType>
+  <EntityType Name="Users">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" />
+    <Property Name="name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="fname" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="login" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="password" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+  </EntityType>
+  <Association Name="FK_Monitors_BrokenPixels">
+    <End Role="BrokenPixels" Type="Self.BrokenPixels" Multiplicity="0..1" />
+    <End Role="Monitors" Type="Self.Monitors" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="BrokenPixels">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="Monitors">
+        <PropertyRef Name="idBrokenPixels" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Keyboards_Efficiency">
+    <End Role="Efficiency" Type="Self.Efficiency" Multiplicity="1" />
+    <End Role="Keyboards" Type="Self.Keyboards" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Efficiency">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="Keyboards">
+        <PropertyRef Name="idEffinciency" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Monitors_Efficiency">
+    <End Role="Efficiency" Type="Self.Efficiency" Multiplicity="1" />
+    <End Role="Monitors" Type="Self.Monitors" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Efficiency">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="Monitors">
+        <PropertyRef Name="idEfficiency" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Pks_Efficiency">
+    <End Role="Efficiency" Type="Self.Efficiency" Multiplicity="1" />
+    <End Role="Pks" Type="Self.Pks" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Efficiency">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="Pks">
+        <PropertyRef Name="idEfficiency" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Monitors_Manufacturers">
+    <End Role="Manufacturers" Type="Self.Manufacturers" Multiplicity="1" />
+    <End Role="Monitors" Type="Self.Monitors" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Manufacturers">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="Monitors">
+        <PropertyRef Name="idmanufacturer" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Monitors_StatusSelling">
+    <End Role="StatusSelling" Type="Self.StatusSelling" Multiplicity="1" />
+    <End Role="Monitors" Type="Self.Monitors" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="StatusSelling">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="Monitors">
+        <PropertyRef Name="idStatusSelling" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Monitors_TypeMatricy">
+    <End Role="TypeMatricy" Type="Self.TypeMatricy" Multiplicity="0..1" />
+    <End Role="Monitors" Type="Self.Monitors" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TypeMatricy">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="Monitors">
+        <PropertyRef Name="idTypeMatricy" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="Practice2024Entities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="BrokenPixels" EntityType="Self.BrokenPixels" />
+    <EntitySet Name="Efficiency" EntityType="Self.Efficiency" />
+    <EntitySet Name="Keyboards" EntityType="Self.Keyboards" />
+    <EntitySet Name="Manufacturers" EntityType="Self.Manufacturers" />
+    <EntitySet Name="Monitors" EntityType="Self.Monitors" />
+    <EntitySet Name="Pks" EntityType="Self.Pks" />
+    <EntitySet Name="StatusSelling" EntityType="Self.StatusSelling" />
+    <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagrams" />
+    <EntitySet Name="TypeMatricy" EntityType="Self.TypeMatricy" />
+    <EntitySet Name="Users" EntityType="Self.Users" />
+    <AssociationSet Name="FK_Monitors_BrokenPixels" Association="Self.FK_Monitors_BrokenPixels">
+      <End Role="BrokenPixels" EntitySet="BrokenPixels" />
+      <End Role="Monitors" EntitySet="Monitors" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Keyboards_Efficiency" Association="Self.FK_Keyboards_Efficiency">
+      <End Role="Efficiency" EntitySet="Efficiency" />
+      <End Role="Keyboards" EntitySet="Keyboards" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Monitors_Efficiency" Association="Self.FK_Monitors_Efficiency">
+      <End Role="Efficiency" EntitySet="Efficiency" />
+      <End Role="Monitors" EntitySet="Monitors" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Pks_Efficiency" Association="Self.FK_Pks_Efficiency">
+      <End Role="Efficiency" EntitySet="Efficiency" />
+      <End Role="Pks" EntitySet="Pks" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Monitors_Manufacturers" Association="Self.FK_Monitors_Manufacturers">
+      <End Role="Manufacturers" EntitySet="Manufacturers" />
+      <End Role="Monitors" EntitySet="Monitors" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Monitors_StatusSelling" Association="Self.FK_Monitors_StatusSelling">
+      <End Role="StatusSelling" EntitySet="StatusSelling" />
+      <End Role="Monitors" EntitySet="Monitors" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Monitors_TypeMatricy" Association="Self.FK_Monitors_TypeMatricy">
+      <End Role="TypeMatricy" EntitySet="TypeMatricy" />
+      <End Role="Monitors" EntitySet="Monitors" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

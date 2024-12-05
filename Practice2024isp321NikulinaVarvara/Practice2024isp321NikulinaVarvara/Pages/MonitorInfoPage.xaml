@@ -1,0 +1,27 @@
+﻿<Page x:Class="Practice2024isp321NikulinaVarvara.Pages.MonitorInfoPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:Practice2024isp321NikulinaVarvara.Pages"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="MonitorInfoPage">
+
+    <Grid>
+        <DataGrid Name="MonitorsDataGrid" HorizontalAlignment="Stretch" VerticalAlignment="Top" Margin="10,100,10,50" AutoGenerateColumns="False">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Производитель" Binding="{Binding manufacturer}" />
+                <DataGridTextColumn Header="Модель" Binding="{Binding nameModel}" />
+                <DataGridTextColumn Header="Разрешение экрана" Binding="{Binding screenResolution}" />
+                <DataGridTextColumn Header="Герцовка" Binding="{Binding gercovka}" />
+                <DataGridTextColumn Header="Тип матрицы" Binding="{Binding typeMatricy}" />
+                <DataGridTextColumn Header="Битые пиксели" Binding="{Binding brokenPixels}" />
+                <DataGridTextColumn Header="Комментарий" Binding="{Binding commentForBrokenPixels}" />
+                <DataGridTextColumn Header="Работоспособность" Binding="{Binding efficiency}" />
+                <DataGridTextColumn Header="Статус продажи" Binding="{Binding statusSelling}" />
+            </DataGrid.Columns>
+        </DataGrid>
+        <Button Content="Назад" HorizontalAlignment="Left" VerticalAlignment="Bottom" Width="100" Margin="10" Click="BackButton_Click"/>
+    </Grid>
+</Page>
